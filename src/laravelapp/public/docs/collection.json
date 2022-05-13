@@ -1,0 +1,240 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "http:\/\/localhost"
+        }
+    ],
+    "info": {
+        "name": "Laravel",
+        "_postman_id": "df0032e4-f497-4247-a7d4-7b8e00a35025",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Endpoints",
+            "description": "",
+            "item": [
+                {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/users",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/users"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "59"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"message\":\"SUCCESS\",\"data\":[{\"id\":1,\"name\":\"Yamada\",\"sex\":\"female\",\"email\":\"yamada@example.com\",\"prefecture\":\"Tokyo\",\"birthday\":\"2000-11-11\",\"email_verified_at\":null,\"created_at\":\"2022-05-11 06:47:01\",\"updated_at\":\"2022-05-11 06:47:01\"},{\"id\":2,\"name\":\"Tanaka\",\"sex\":\"male\",\"email\":\"tanaka@example.com\",\"prefecture\":\"Saitama\",\"birthday\":\"1990-12-12\",\"email_verified_at\":null,\"created_at\":\"2022-05-11 06:47:01\",\"updated_at\":\"2022-05-11 06:47:01\"},{\"id\":3,\"name\":\"Suzuki\",\"sex\":\"female\",\"email\":\"suzuki@example.com\",\"prefecture\":\"Kanagawa\",\"birthday\":\"1970-07-11\",\"email_verified_at\":null,\"created_at\":\"2022-05-11 06:47:01\",\"updated_at\":\"2022-05-11 06:47:01\"},{\"id\":4,\"name\":\"Ochiai\",\"sex\":\"male\",\"email\":\"ochiai@example.com\",\"prefecture\":\"Chiba\",\"birthday\":\"1960-03-02\",\"email_verified_at\":null,\"created_at\":\"2022-05-11 06:47:01\",\"updated_at\":\"2022-05-11 06:47:01\"},{\"id\":5,\"name\":\"Takei\",\"sex\":\"female\",\"email\":\"takei@example.com\",\"prefecture\":\"Hokkaido\",\"birthday\":\"1970-05-05\",\"email_verified_at\":null,\"created_at\":\"2022-05-11 06:47:01\",\"updated_at\":\"2022-05-11 06:47:01\"},{\"id\":6,\"name\":\"Satonaka\",\"sex\":\"female\",\"email\":\"satonaka@example.com\",\"prefecture\":\"Tokyo\",\"birthday\":\"1989-04-15\",\"email_verified_at\":null,\"created_at\":\"2022-05-11 09:06:53\",\"updated_at\":\"2022-05-11 09:06:53\"}]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/users",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/users"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/users\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/users\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "10",
+                                    "description": "The ID of the user."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "58"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"message\":\"SUCCESS\",\"data\":{\"id\":1,\"name\":\"Yamada\",\"sex\":\"female\",\"email\":\"yamada@example.com\",\"prefecture\":\"Tokyo\",\"birthday\":\"2000-11-11\",\"email_verified_at\":null,\"created_at\":\"2022-05-11 06:47:01\",\"updated_at\":\"2022-05-11 06:47:01\"}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Update the specified resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/users\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/users\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "20",
+                                    "description": "The ID of the user."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified resource from storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/users\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/users\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the user."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}

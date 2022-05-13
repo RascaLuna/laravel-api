@@ -1,0 +1,128 @@
+name: Endpoints
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/users
+    metadata:
+      title: 'Display a listing of the resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"message":"SUCCESS","data":[{"id":1,"name":"Yamada","sex":"female","email":"yamada@example.com","prefecture":"Tokyo","birthday":"2000-11-11","email_verified_at":null,"created_at":"2022-05-11 06:47:01","updated_at":"2022-05-11 06:47:01"},{"id":2,"name":"Tanaka","sex":"male","email":"tanaka@example.com","prefecture":"Saitama","birthday":"1990-12-12","email_verified_at":null,"created_at":"2022-05-11 06:47:01","updated_at":"2022-05-11 06:47:01"},{"id":3,"name":"Suzuki","sex":"female","email":"suzuki@example.com","prefecture":"Kanagawa","birthday":"1970-07-11","email_verified_at":null,"created_at":"2022-05-11 06:47:01","updated_at":"2022-05-11 06:47:01"},{"id":4,"name":"Ochiai","sex":"male","email":"ochiai@example.com","prefecture":"Chiba","birthday":"1960-03-02","email_verified_at":null,"created_at":"2022-05-11 06:47:01","updated_at":"2022-05-11 06:47:01"},{"id":5,"name":"Takei","sex":"female","email":"takei@example.com","prefecture":"Hokkaido","birthday":"1970-05-05","email_verified_at":null,"created_at":"2022-05-11 06:47:01","updated_at":"2022-05-11 06:47:01"},{"id":6,"name":"Satonaka","sex":"female","email":"satonaka@example.com","prefecture":"Tokyo","birthday":"1989-04-15","email_verified_at":null,"created_at":"2022-05-11 09:06:53","updated_at":"2022-05-11 09:06:53"}]}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '59'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/users
+    metadata:
+      title: 'Store a newly created resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/users/{id}'
+    metadata:
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the user.'
+        required: true
+        example: 10
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"message":"SUCCESS","data":{"id":1,"name":"Yamada","sex":"female","email":"yamada@example.com","prefecture":"Tokyo","birthday":"2000-11-11","email_verified_at":null,"created_at":"2022-05-11 06:47:01","updated_at":"2022-05-11 06:47:01"}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '58'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/users/{id}'
+    metadata:
+      title: 'Update the specified resource in storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the user.'
+        required: true
+        example: 20
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/users/{id}'
+    metadata:
+      title: 'Remove the specified resource from storage.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the user.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
